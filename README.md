@@ -7,7 +7,7 @@ This is a 2D fighting game created using JavaScript and HTML Canvas. It is built
 
 ## :computer: Live link
 
-[Recipes](https://xanderbylo.github.io/recipes/)
+[fighting-game](https://xanderbylo.github.io/fighting-game/)
 
 ## :floppy_disk: Technologies
 
@@ -23,5 +23,6 @@ This is a 2D fighting game created using JavaScript and HTML Canvas. It is built
 
 * How to use HTML Canvas to create an area for a game to be played in
 * How use JavaScript to create attack boxes and collision detection
+* How use JavaScript for collision detection
 
 ## :page_facing_up: Credits
