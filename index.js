@@ -20,12 +20,13 @@ class Sprite {
                 x: this.position.x,
                 y: this.position.y
             },
-            offset,
+            offset, 
             width: 100,
             height: 50
         }
         this.color = color
         this.isAttacking
+        this.health = 100
     }
 
     draw() {
@@ -152,7 +153,8 @@ function animate() {
         player.isAttacking
     ) {
         player.isAttacking = false
-        console.log('go')
+        enemy.health -= 20
+        document.querySelector('#enemyHealth').style.width = enemy.health + '%'
     }
 
     if (
