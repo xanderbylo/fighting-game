@@ -169,6 +169,20 @@ function animate() {
         document.querySelector('#playerHealth').style.width = player.health + '%'
     }
 }
+
+let timer = 10
+function decreaseTimer() {
+    
+    if (timer > 0) {
+        setTimeout(decreaseTimer, 1000)
+        timer--
+        document.querySelector('#timer').innerHTML = timer
+    }
+
+    
+}
+
+decreaseTimer()
  
 animate()
 
