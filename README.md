@@ -21,8 +21,11 @@ This is a 2D fighting game created using JavaScript and HTML Canvas. It is built
 
 ## :bulb: Things I learnt
 
-* How to use HTML Canvas to create an area for a game to be played in
-* How use JavaScript to create attack boxes and collision detection
-* How use JavaScript for collision detection
+* How to use HTML Canvas
+* How to create attack boxes in JavaScript
+* How to register attacks using collision detection in JavaScript
+* How to animate sprites in JavaScript
 
 ## :page_facing_up: Credits
+
+* background.png by [brullov](https://brullov.itch.io) on [Itch.io](https://itch.io)
