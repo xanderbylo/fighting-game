@@ -47,6 +47,14 @@ const player = new Fighter({
         jump: {
             imageSrc: './img/player/jump.png',
             framesMax: 2
+        },
+        fall: {
+            imageSrc: './img/player/fall.png',
+            framesMax: 2
+        },
+        attack1: {
+            imageSrc: './img/player/attack1.png',
+            framesMax: 6
         }
     }
 })
@@ -109,8 +117,11 @@ function animate() {
         player.switchSprite('idle')
     }
 
+    // jumping
     if (player.velocity.y < 0) {
         player.switchSprite('jump')
+    } else if (player.velocity.y > 0) {
+        player.switchSprite('fall')
     }
 
     // enemy movement
@@ -166,7 +177,7 @@ window.addEventListener('keydown', (event) => {
         case 'w':
            player.velocity.y = -20
             break
-        case ' ':
+        case 's':
             player.attack()
             break
 
