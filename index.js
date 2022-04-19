@@ -72,6 +72,34 @@ const enemy = new Fighter({
     offset: {
         x: -50,
         y: 0
+    },
+    imageSrc: './img/enemy/idle.png',
+    framesMax: 8,
+    offset: { 
+        x: 215,
+        y: 155
+    },
+    sprites: {
+        idle: {
+            imageSrc: './img/enemy/idle.png',
+            framesMax: 8
+        },
+        run: {
+            imageSrc: './img/enemy/run.png',
+            framesMax: 8
+        },
+        jump: {
+            imageSrc: './img/enemy/jump.png',
+            framesMax: 2
+        },
+        fall: {
+            imageSrc: './img/enemy/fall.png',
+            framesMax: 2
+        },
+        attack1: {
+            imageSrc: './img/enemy/attack1.png',
+            framesMax: 6
+        }
     }
 })
 
@@ -100,13 +128,12 @@ function animate() {
     c.fillRect(0, 0, canvas.width, canvas.height)
     background.update()
     player.update()
-    // enemy.update()
+    enemy.update()
     
     player.velocity.x = 0
     enemy.velocity.x = 0
 
     // player movement
-    
     if (keys.a.pressed && player.lastKey === 'a') {
         player.velocity.x = -5
         player.switchSprite('run')
@@ -117,7 +144,7 @@ function animate() {
         player.switchSprite('idle')
     }
 
-    // jumping
+    // player jumping
     if (player.velocity.y < 0) {
         player.switchSprite('jump')
     } else if (player.velocity.y > 0) {
@@ -127,8 +154,19 @@ function animate() {
     // enemy movement
     if (keys.ArrowLeft.pressed && enemy.lastKey === 'ArrowLeft') {
         enemy.velocity.x = -5
+        enemy.switchSprite('run')
     } else if (keys.ArrowRight.pressed && enemy.lastKey === 'ArrowRight') {
         enemy.velocity.x = 5
+        enemy.switchSprite('run')
+    } else {
+        enemy.switchSprite('idle')
+    }
+
+    // enemy jumping
+    if (enemy.velocity.y < 0) {
+        enemy.switchSprite('jump')
+    } else if (enemy.velocity.y > 0) {
+        enemy.switchSprite('fall')
     }
 
     // detect for collision
