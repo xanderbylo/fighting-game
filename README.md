@@ -29,4 +29,8 @@ This is a 2D fighting game created using JavaScript and HTML Canvas. It is built
 ## :page_facing_up: Credits
 
 * background.png by [brullov](https://brullov.itch.io) on [Itch.io](https://itch.io)
+* attack1.png by [LuizMelo](https://luizmelo.itch.io) on [Itch.io](https://itch.io)
 * idle.png by [LuizMelo](https://luizmelo.itch.io) on [Itch.io](https://itch.io)
+* jump.png by [LuizMelo](https://luizmelo.itch.io) on [Itch.io](https://itch.io)
+* fall.png by [LuizMelo](https://luizmelo.itch.io) on [Itch.io](https://itch.io)
+* run.png by [LuizMelo](https://luizmelo.itch.io) on [Itch.io](https://itch.io)
