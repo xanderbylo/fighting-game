@@ -14,6 +14,7 @@ This is a 2D fighting game created using JavaScript and HTML Canvas. It is built
 * CSS
 * Git
 * GitHub
+* GSAP
 * HTML
 * JavaScript
 * Terminal
@@ -22,7 +23,7 @@ This is a 2D fighting game created using JavaScript and HTML Canvas. It is built
 ## :bulb: Things I learnt
 
 * How to use HTML Canvas
-* How to create attack boxes in JavaScript
+* How to create attack and hit boxes in JavaScript
 * How to register attacks using collision detection in JavaScript
 * How to animate sprites in JavaScript
 
